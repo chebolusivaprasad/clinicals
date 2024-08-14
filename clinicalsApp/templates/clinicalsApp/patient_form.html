@@ -1,0 +1,24 @@
+{% load i18n %}
+{% load static %}
+<!<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+    
+    <head>
+        <meta charset="utf-8">  
+        <link rel="stylesheet"  href="{% static 'css/clinicals.css' %}">
+    </head>
+    <body>
+    
+        <h1>Create Patient</h1>
+        <form method="post">
+        <table>
+        <th>{{form.as_table}}</th>
+        {% csrf_token %}
+        </table>
+       <br/> <input type="submit" value="save">
+        
+        </form>
+     
+
+    </body>
+</html>
